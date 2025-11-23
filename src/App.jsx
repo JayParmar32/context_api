@@ -1,13 +1,13 @@
 import { createBrowserRouter, RouterProvider } from 'react-router'
 import './App.css'
-import Home from './pages/Home'
-import About from './pages/About'
-import Contect from './pages/Contect';
+import Home from './pages/Home';
+import Contact from './pages/Contact';
 import Shop from './pages/Shop';
 import Applayout from './componenets/Applayout';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Protectroute from './componenets/Protectroute';
+import Details from './pages/Details';
 
 function App() {
   const router = createBrowserRouter([
@@ -22,17 +22,17 @@ function App() {
             path: "/",
             element: <Home />
           },
+          
           {
-            path: "/about",
-            element: <About />
-          },
-          {
-            path: "/contect",
-            element: <Contect />
+            path: "/contact",
+            element: <Contact />
           },
           {
             path: "/shop",
             element: <Shop />
+          },{
+            path: "/details/:id",
+            element: <Details/>
           }
         ]
       },]

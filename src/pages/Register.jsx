@@ -10,7 +10,7 @@ export default function Register() {
   const register = (e) => {
     e.preventDefault();
     console.log("Registered:", { username, email, password });
-    navigate("/");
+    navigate("/");   
   };
 
   const heandleUsername =(e)=>{

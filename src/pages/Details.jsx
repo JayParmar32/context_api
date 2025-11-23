@@ -16,6 +16,7 @@ export default function ProductDetails() {
 
   return (
     <div className="p-10">
+       <h1>Product Details: {id}</h1>
 
       <h1 className="text-4xl font-bold mt-6">{product.title}</h1>
 
